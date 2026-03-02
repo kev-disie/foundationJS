@@ -49,4 +49,16 @@ function buy(){
  
 How is the going cheers ${yourName}`
 
- console.log(email)
+console.log(email)
+
+console.log( Boolean("")) //falsy
+
+console.log( Boolean("0")) //truthy
+
+console.log( Boolean(100)) //truthy
+
+console.log( Boolean(null)) //falsy
+
+console.log( Boolean([0])) //truthy
+
+ console.log( Boolean(-0)) //truthy

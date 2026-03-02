@@ -1,35 +1,50 @@
-let myLeads = [];
+let myLeads =[];
 
+// myLeads = JSON.parse(myLeads)  //converts a string into an array of object/value
 
+// console.log(typeof myLeads)
+
+// myLeads = JSON.stringify(myLeads) // convert the array into a string
+
+// console.log(typeof myLeads)
+
+   
 const inputEl = document.getElementById("input-el")
 
 const inputBtn = document.getElementById("input-btn")
 
-const ulEL = document.getElementById("ul-el") //defined and get the u-el id from the DOM != assignment
+const ulEL = document.getElementById("ul-el") //defined and get the u-el id from the DOM != assignme
+// localStorage.setItem("myleads" ,"https://fast.com")
 
+// console.log(localStorage.getItem("myleads"))
 
+// localStorage.setItem("portfolio","https://youtube.com")
+// console.log(localStorage.getItem("portfolio"))
+// localStorage.clear()
 
-// let lead = inputEl.value
+let leadsFromLocalStorage = "";
 
-  let lent = myLeads.length
-
-      console.log(lent)
-
+leadsFromLocalStorage = localStorage.getItem(myLeads)  //use JSON.parse() then pass the localStorage.getItem in the brackets to convert the JSON strings into JS object or values
 
 
 inputBtn.addEventListener("click",function(){
-    // myLeads.push(lead)
+    // myLeads.push(myLeads)
+
     myLeads.push(inputEl.value)
-     console.log(lent)
-    console.log(myLeads)
-    
-      renderLeads()
 
-    
+   
 
-    // console.log(renderLeads())
+    // myLeads = JSON.parse(myLeads)
+
+    localStorage.setItem("myLeads",JSON.stringify(myLeads))
+
+  // console.log(renderLeads())
+
+  renderLeads()
 
     console.log("Button clicked from addEventlistener...")
+
+ console.log(localStorage)
 })
 
 function renderLeads(){
@@ -52,10 +67,7 @@ for (let i = 0; i < myLeads.length ;i ++){
        <a  class = 'a'target = _blank href = ${myLeads[i]} >
 
        ${myLeads[i] + " 😮‍💨"}
-       
-       
-       
-       
+        
        </li>`
        
             
