@@ -49,16 +49,48 @@ function buy(){
  
 How is the going cheers ${yourName}`
 
-console.log(email)
+// console.log(email)
 
-console.log( Boolean("")) //falsy
+// console.log( Boolean("")) //falsy
 
-console.log( Boolean("0")) //truthy
+// console.log( Boolean("0")) //truthy
 
-console.log( Boolean(100)) //truthy
+// console.log( Boolean(100)) //truthy
 
-console.log( Boolean(null)) //falsy
+// console.log( Boolean(null)) //falsy
 
-console.log( Boolean([0])) //truthy
+// console.log( Boolean([0])) //truthy
 
- console.log( Boolean(-0)) //truthy
+//  console.log( Boolean(-0)) //truthy
+
+// passing strings in functions
+
+const welcomeEl = document.getElementById("welcome-el")
+
+function greetUser(greeting,name,speaker,emoji){
+
+    welcomeEl.textContent = `${greeting} ${name} ${speaker} ${emoji} `
+}
+
+greetUser("welcome back","kassandra",",I will be your supervisor","🥲")
+
+//passing numbers in functions
+
+function add(num1,num2){
+
+return`${num1 + num2}`;
+}
+
+console.log(add(207,100))
+
+//passing arrrys in functions
+
+function getFirst(arr){
+
+arr[0]
+
+}
+
+console.log(getFirst("where are my Car Keys"))
+
+

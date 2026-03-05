@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Kass",
+      "request": "launch",
+      "mainClass": "Kass",
+      "projectName": "my.JS.projects__41d2a49a"
+    },
+    {
       "name": "Launch Chrome",
       "request": "launch",
       "type": "chrome",
