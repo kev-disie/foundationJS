@@ -35,7 +35,7 @@ body{
     float: left;
     text-align: left;
     border: 1px;
-    transition: background-color 3.0s ease;
+    transition: background-color 2.8s ease;
     margin-left: 2px;
 }
 
@@ -58,7 +58,29 @@ body{
 } */
 
 .btn1:hover{
-    background-color: brown ;
+    background-color: rgb(42, 138, 165) ;
+}
+
+
+.btn2{
+    width: 80px;
+    margin-top: 10px;
+    background-color:#5f9341;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: white;
+    padding: 5px ;
+    float: left;
+    text-align: left;
+    border: 1px;
+    transition: background-color 2.8s ease;
+    margin-left: 2px;
+
+
+}
+.btn2:hover{
+    background-color: rgb(42, 138, 165) ;
+
 }
 
 .ul{

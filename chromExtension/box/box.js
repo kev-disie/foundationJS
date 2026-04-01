@@ -87,10 +87,17 @@ console.log(add(207,100))
 
 function getFirst(arr){
 
-arr[0]
+return arr[0]
 
 }
+console.log(getFirst(["Where are my car Keys!!","woshi"]))
 
-console.log(getFirst("where are my Car Keys"))
 
 
+// function divide(n1,n2){
+
+//     return n1 * n2;
+// }
+
+
+// console.log(divide(12.5,12))

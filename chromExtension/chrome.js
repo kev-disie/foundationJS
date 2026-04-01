@@ -8,6 +8,11 @@ let myLeads =[];
 
 // console.log(typeof myLeads)
 
+const tabs = [
+  {url:"https://www.linkedin.com/in/pe-harald-borgen"}
+
+]
+
 
 
 const deleteBtn = document.getElementById("delete-el")  //jsut incase!!
@@ -28,6 +33,8 @@ const ulEL = document.getElementById("ul-el") //defined and get the u-el id from
 // let leadsFromLocalStorage = "";
 
 // console.log(localStorage)
+
+const tabBtn = document.getElementById("tab-btn")
 
 deleteBtn.addEventListener("dblclick",function(){
 
@@ -104,8 +111,6 @@ for (let i = 0; i < leads.length ;i ++){
 }
 inputEl.value = "";
 
-
-
 }
 
 // let items = JSON.parse(localStorage.getItem("myLeads"))
@@ -120,6 +125,20 @@ if (leadsFromLocalStorage){
 }
 
 console.log(Boolean(leadsFromLocalStorage))
+
+tabBtn.addEventListener("click",function(){
+
+   
+
+  console.log(JSON.stringify(tabs))
+
+
+
+
+})
+
+
+
 // localStorage.setItem("myName","Kassandra Shannel")
 
 // localStorage.clear()
