@@ -47,8 +47,10 @@ const newPeople = people.map((item) =>{
     }
 })
 console.log(newPeople)
-const names = people.map((person)=>
-    `<h2>${person.name}</h2>`
+const names = people.map((person)=>{
+    return `<h2>${person.name}</h2> `
+    }
+
 )
 const result = document.querySelector('#result-container');
 result.innerHTML = names.join('')
