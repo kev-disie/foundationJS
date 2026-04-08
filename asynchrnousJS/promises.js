@@ -33,10 +33,36 @@ const prom = new Promise ((resolve, reject) =>{
 })
 
 // console.log(prom)
+//
+// prom
+//     .then((value)=>{
+//     console.log(value)
+// })
+//     .catch((reason)=>{
+//     console.log(reason)
+// })
 
-prom.then((value)=>{
-    console.log(value)
+const promiseOne = new Promise((resolve,reject) =>{
+    resolve("Promise one has been resolved")
 })
-prom.catch((reason)=>{
-    console.log(reason)
+const promiseTwo = new Promise((resolve,reject) =>{
+    resolve("Promise two has been resolved");
 })
+const promiseThree = new Promise((resolve,reject) =>{
+    reject("Promise three has been rejected.Unlucky you!!");
+})
+
+promiseOne
+    .then((value)=>{
+        console.log(value)
+        return promiseTwo
+    })
+    .then((value)=>{
+        console.log(value)
+        return promiseThree;
+    })
+    .catch((error)=>{
+        console.log(error)
+
+    })
+
